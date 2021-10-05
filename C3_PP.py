@@ -21,6 +21,8 @@ while True:
     dino_rect.y += dino_y_change
    
     cactus_rect.x = cactus_rect.x - 1
+    if cactus_rect.x <= -30:
+        cactus_rect.x = 1200
         
     pygame.draw.rect(screen, (100, 100, 100), dino_rect)
     pygame.draw.rect(screen, (100, 100, 100), cactus_rect)
