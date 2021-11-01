@@ -16,10 +16,19 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-    
+        if -----.type == pygame.-------:           #SA1
+            if event.--- == pygame.-------:        #SA1
+                ------------- = 1  
+        #if -----.type == pygame.-------:           #SA2
+        #    if event.--- == pygame.-------:        #SA2
+        #        ------------- = 1                  #SA2
     
     dino_rect.y += dino_y_change
-   
+     if dino_rect.y __ 100:                        #SA1
+        dino_rect.y __ 100
+     #if dino_rect.y __ 250:                        #SA2
+     #   dino_rect.y __ 250                         #SA2   
+
     cactus_rect.x = cactus_rect.x - 1
     if cactus_rect.x <= -30:
         cactus_rect.x = 1200
